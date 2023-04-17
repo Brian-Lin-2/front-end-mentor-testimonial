@@ -21,8 +21,8 @@ body {
 .grid__container {
     display: grid;
 
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-template-rows: 47% 47%;
 
     grid-template-areas: 
         "item1 item1 item2 item3"
@@ -86,11 +86,14 @@ body {
 
 .grid__item1 .profile__name,
 .grid__item2 .profile__name,
-.grid__item5 .profile__name,
+.grid__item5 .profile__name {
+    color: hsla(0, 0%, 100%, 75%);
+}
+
 .grid__item1 .grid__header,
 .grid__item2 .grid__header,
 .grid__item5 .grid__header {
-    color: hsla(0, 0%, 100%, 75%);
+    color: hsla(0, 0%, 100%, 90%);
 }
 
 .grid__item1 .profile__grad,
@@ -120,5 +123,5 @@ body {
 
 .grid__header {
     font-size: 17px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }

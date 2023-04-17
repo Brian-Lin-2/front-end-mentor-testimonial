@@ -3,32 +3,56 @@
 }
 
 body {
+    border: 1px red solid;
+
     margin: 0px;
+
+    font-family: 'Barlow Semi Condensed', 'Times New Roman', Times, serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .grid__container {
     border: 1px red solid;
     display: grid;
 
-    grid-template-columns: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas: 
+        "item1 item1 item2 item3"
+        "item4 item5 item5 item3";
 }
 
 .grid__item1 {
     border: 1px red solid;
+
+    /* Can't use numbers for grid-area */
+    grid-area: item1;
 }
 
 .grid__item2 {
     border: 1px red solid;
+    grid-area: item2;
 }
 
 .grid__item3 {
     border: 1px red solid;
+    grid-area: item3;
+
 }
 
 .grid__item4 {
     border: 1px red solid;
+    grid-area: item4;
+
 }
 
 .grid__item5 {
     border: 1px red solid;
+    grid-area: item5;
 }

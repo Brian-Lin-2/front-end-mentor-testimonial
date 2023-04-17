@@ -22,7 +22,7 @@ body {
     display: grid;
 
     grid-template-columns: 22% 22% 22% 22%;
-    grid-template-rows: 47% 47%;
+    grid-template-rows: 50% 50%;
 
     grid-template-areas: 
         "item1 item1 item2 item3"
@@ -86,7 +86,13 @@ body {
 
 .grid__item1 .profile__name,
 .grid__item2 .profile__name,
-.grid__item5 .profile__name {
+.grid__item5 .profile__name,
+.grid__item1 .profile__grad,
+.grid__item2 .profile__grad,
+.grid__item5 .profile__grad,
+.grid__item1 .grid__text,
+.grid__item2 .grid__text,
+.grid__item5 .grid__text {
     color: hsla(0, 0%, 100%, 75%);
 }
 
@@ -96,20 +102,14 @@ body {
     color: hsla(0, 0%, 100%, 90%);
 }
 
-.grid__item1 .profile__grad,
-.grid__item2 .profile__grad,
-.grid__item5 .profile__grad,
-.grid__item1 .grid__text,
-.grid__item2 .grid__text,
-.grid__item5 .grid__text {
-    color: hsla(0, 0%, 100%, 75%);
-    opacity: 50%;
-}
-
 .grid__item3 .profile__name,
 .grid__item4 .profile__name,
 .grid__item3 .grid__header,
-.grid__item4 .grid__header {
+.grid__item4 .grid__header,
+.grid__item3 .profile__grad,
+.grid__item4 .profile__grad,
+.grid__item3 .grid__text,
+.grid__item4 .grid__text {
     color: hsla(0, 0%, 0%, 75%);
 }
 
@@ -122,6 +122,15 @@ body {
 }
 
 .grid__header {
-    font-size: 17px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.profile__grad {
+    opacity: 50%;
+}
+
+.grid__text {
+    opacity: 70%;
+    line-height: 1.1rem;
 }

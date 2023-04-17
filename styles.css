@@ -3,24 +3,22 @@
 }
 
 body {
-    border: 1px red solid;
-
     margin: 0px;
 
     font-family: 'Barlow Semi Condensed', 'Times New Roman', Times, serif;
 
-    width: 1440px;
-    min-height: 900px;
+    min-height: 100vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
     background-color: hsl(210, 46%, 95%);
+
+    font-size: 13px;
 }
 
 .grid__container {
-    border: 1px red solid;
     display: grid;
 
     grid-template-columns: auto auto auto auto;
@@ -42,8 +40,6 @@ body {
 }
 
 .grid__item1 {
-    border: 1px red solid;
-
     /* Can't use numbers for grid-area */
     grid-area: item1;
 
@@ -55,41 +51,74 @@ body {
 }
 
 .grid__item2 {
-    border: 1px red solid;
     grid-area: item2;
-
     background-color: hsl(217, 19%, 35%);
 }
 
 .grid__item3 {
-    border: 1px red solid;
     grid-area: item3;
-
     background-color: hsl(0, 0%, 100%);
 }
 
 .grid__item4 {
-    border: 1px red solid;
     grid-area: item4;
-
     background-color: hsl(0, 0%, 100%);
 }
 
 .grid__item5 {
-    border: 1px red solid;
     grid-area: item5;
-
     background-color: hsl(219, 29%, 14%);
 }
 
 .profile {
     display: flex;
     gap: 20px;
+
+    margin-bottom: 15px;
 }
 
 .profile__pic {
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 50%;
 
-    height: 35px;
+    height: 32px;
+}
+
+.grid__item1 .profile__name,
+.grid__item2 .profile__name,
+.grid__item5 .profile__name,
+.grid__item1 .grid__header,
+.grid__item2 .grid__header,
+.grid__item5 .grid__header {
+    color: hsla(0, 0%, 100%, 75%);
+}
+
+.grid__item1 .profile__grad,
+.grid__item2 .profile__grad,
+.grid__item5 .profile__grad,
+.grid__item1 .grid__text,
+.grid__item2 .grid__text,
+.grid__item5 .grid__text {
+    color: hsla(0, 0%, 100%, 75%);
+    opacity: 50%;
+}
+
+.grid__item3 .profile__name,
+.grid__item4 .profile__name,
+.grid__item3 .grid__header,
+.grid__item4 .grid__header {
+    color: hsla(0, 0%, 0%, 75%);
+}
+
+.grid__item3 .profile__grad,
+.grid__item4 .profile__grad,
+.grid__item3 .grid__text,
+.grid__item4 .grid__text {
+    color: hsla(0, 0%, 0%, 75%);
+    opacity: 50%;
+}
+
+.grid__header {
+    font-size: 17px;
+    margin-bottom: 20px;
 }
